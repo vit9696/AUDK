@@ -638,9 +638,9 @@ NOOPT_VS2017_AARCH64_DLINK_FLAGS   = DEF(MSFT_DLINK_COMMON) /MACHINE:ARM64 /DEBU
 *_VS2019_IA32_PP_PATH      = DEF(VS2019_BIN_IA32)\cl.exe
 *_VS2019_IA32_ASM_PATH     = DEF(VS2019_BIN_IA32)\ml.exe
 
-  DEBUG_VS2019_IA32_CC_FLAGS    = /nologo /arch:IA32 /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Z7 /Gw
-RELEASE_VS2019_IA32_CC_FLAGS    = /nologo /arch:IA32 /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw
-NOOPT_VS2019_IA32_CC_FLAGS      = /nologo /arch:IA32 /c /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Z7 /Od
+  DEBUG_VS2019_IA32_CC_FLAGS    = /nologo /arch:IA32 /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Z7 /Gw
+RELEASE_VS2019_IA32_CC_FLAGS    = /nologo /arch:IA32 /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw
+NOOPT_VS2019_IA32_CC_FLAGS      = /nologo /arch:IA32 /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Z7 /Od
 
   DEBUG_VS2019_IA32_ASM_FLAGS   = /nologo /c /WX /W3 /Cx /coff /Zd /Zi
 RELEASE_VS2019_IA32_ASM_FLAGS   = /nologo /c /WX /W3 /Cx /coff /Zd
@@ -668,9 +668,9 @@ NOOPT_VS2019_IA32_DLINK_FLAGS   = DEF(MSFT_DLINK_COMMON) /MACHINE:X86 /DEBUG
 *_VS2019_X64_DLINK_PATH    = DEF(VS2019_BIN_X64)\link.exe
 *_VS2019_X64_ASLDLINK_PATH = DEF(VS2019_BIN_X64)\link.exe
 
-  DEBUG_VS2019_X64_CC_FLAGS     = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw
-RELEASE_VS2019_X64_CC_FLAGS     = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Gw
-NOOPT_VS2019_X64_CC_FLAGS       = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Od
+  DEBUG_VS2019_X64_CC_FLAGS     = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Gw
+RELEASE_VS2019_X64_CC_FLAGS     = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Gw
+NOOPT_VS2019_X64_CC_FLAGS       = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Z7 /Od
 
   DEBUG_VS2019_X64_ASM_FLAGS    = /nologo /c /WX /W3 /Cx /Zd /Zi
 RELEASE_VS2019_X64_ASM_FLAGS    = /nologo /c /WX /W3 /Cx /Zd
@@ -698,9 +698,9 @@ NOOPT_VS2019_X64_DLINK_FLAGS    = DEF(MSFT_DLINK_COMMON) /IGNORE:4281 /MACHINE:X
 *_VS2019_ARM_ASLPP_PATH           = DEF(VS2019_BIN_ARM)\cl.exe
 *_VS2019_ARM_ASLDLINK_PATH        = DEF(VS2019_BIN_ARM)\link.exe
 
-  DEBUG_VS2019_ARM_CC_FLAGS       = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Gw /Oi-
-RELEASE_VS2019_ARM_CC_FLAGS       = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw /Oi-
-NOOPT_VS2019_ARM_CC_FLAGS         = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Od /Oi-
+  DEBUG_VS2019_ARM_CC_FLAGS       = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Gw /Oi-
+RELEASE_VS2019_ARM_CC_FLAGS       = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw /Oi-
+NOOPT_VS2019_ARM_CC_FLAGS         = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Od /Oi-
 
   DEBUG_VS2019_ARM_ASM_FLAGS      = /nologo /g
 RELEASE_VS2019_ARM_ASM_FLAGS      = /nologo
@@ -724,9 +724,9 @@ NOOPT_VS2019_ARM_DLINK_FLAGS      = DEF(MSFT_DLINK_COMMON) /MACHINE:ARM /DEBUG
 *_VS2019_AARCH64_ASLPP_PATH        = DEF(VS2019_BIN_AARCH64)\cl.exe
 *_VS2019_AARCH64_ASLDLINK_PATH     = DEF(VS2019_BIN_AARCH64)\link.exe
 
-  DEBUG_VS2019_AARCH64_CC_FLAGS    = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Gw /Oi-
-RELEASE_VS2019_AARCH64_CC_FLAGS    = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw /Oi-
-NOOPT_VS2019_AARCH64_CC_FLAGS      = /nologo /c /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Od /Oi-
+  DEBUG_VS2019_AARCH64_CC_FLAGS    = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Gw /Oi-
+RELEASE_VS2019_AARCH64_CC_FLAGS    = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /O1b2 /GL /FIAutoGen.h /EHs-c- /GR- /GF /Gw /Oi-
+NOOPT_VS2019_AARCH64_CC_FLAGS      = /nologo /c /Za /std:c11 /WX /GS- /W4 /Gs32768 /D UNICODE /FIAutoGen.h /EHs-c- /GR- /GF /Gy /Zi /Od /Oi-
 
   DEBUG_VS2019_AARCH64_ASM_FLAGS   = /nologo /g
 RELEASE_VS2019_AARCH64_ASM_FLAGS   = /nologo
